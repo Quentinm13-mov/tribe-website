@@ -192,13 +192,25 @@ ul { list-style: none; }
 }
 
 .hero__actions {
-  display: flex;
-  flex-direction: row;
+  display: flex !important;
+  flex-direction: row !important;
   gap: 16px;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
-  margin-top: 8px;
+  margin-top: 32px;
+}
+
+@media (max-width: 480px) {
+  .hero__actions {
+    flex-direction: column !important;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .hero__actions .btn {
+    width: 100%;
+    text-align: center;
+  }
 }
 
 .hero__visual {
