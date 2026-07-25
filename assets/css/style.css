@@ -134,6 +134,8 @@ ul { list-style: none; }
   border-bottom: 1px solid var(--border);
 }
 
+.nav__logo img { height: 40px; width: auto; display: block; }
+
 .nav__logo {
   font-size: 20px;
   font-weight: 800;
