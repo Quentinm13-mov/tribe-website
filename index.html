@@ -3,8 +3,46 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tribe — L'app pour les clubs sportifs urbains</title>
-  <meta name="description" content="Tribe digitalise votre club sportif : gestion des membres, événements, messagerie et boutique en une seule app." />
+  <title>Tribe — L'app qui aide la gestion des clubs sportifs</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Tribe — L'app qui aide la gestion des clubs sportifs. Calendrier, chat, boutique, entraînements et analytics pour les clubs de running, cyclisme et trail." />
+  <meta name="keywords" content="application club sportif, gestion club running, app club cyclisme, logiciel club trail, gérer club sport, calendrier club running, application sport urbain" />
+  <meta name="author" content="Tribe" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://tribeapp.fr" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Tribe — L'app qui aide la gestion des clubs sportifs" />
+  <meta property="og:description" content="Calendrier, chat, boutique, entraînements et analytics pour les clubs de running, cyclisme et trail." />
+  <meta property="og:url" content="https://tribeapp.fr" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="fr_FR" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Tribe — L'app qui aide la gestion des clubs sportifs" />
+  <meta name="twitter:description" content="Calendrier, chat, boutique, entraînements et analytics pour les clubs de running, cyclisme et trail." />
+
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Tribe",
+    "description": "L'app qui aide la gestion des clubs sportifs de running, cyclisme et trail",
+    "applicationCategory": "SportsApplication",
+    "operatingSystem": "iOS, Android",
+    "offers": [
+      { "@type": "Offer", "name": "Gratuit", "price": "0", "priceCurrency": "EUR" },
+      { "@type": "Offer", "name": "Starter", "price": "3", "priceCurrency": "EUR" },
+      { "@type": "Offer", "name": "Club Pro", "price": "5", "priceCurrency": "EUR" }
+    ],
+    "url": "https://tribeapp.fr",
+    "inLanguage": "fr"
+  }
+  </script>
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
@@ -28,7 +66,7 @@
     <div class="container">
       <div class="hero__content">
         <span class="badge">Nouveau</span>
-        <h1 class="hero__title">Votre club sportif,<br /><span class="accent">digitalisé.</span></h1>
+        <h1 class="hero__title">L'app qui aide la gestion des<br /><span class="accent">clubs sportifs.</span></h1>
         <p class="hero__subtitle">
           Tribe regroupe tout ce dont votre club a besoin : membres, événements, messagerie, boutique et analytics — dans une seule app mobile.
         </p>
@@ -40,7 +78,7 @@
       <div class="hero__visual">
         <div class="iphone iphone--lg">
           <div class="iphone__screen">
-            <img src="assets/img/Simulator Screenshot 1.png" alt="Tribe app — écran principal" />
+            <img src="assets/img/Simulator_Screenshot_2.png" alt="Tribe app — écran principal" />
             <div class="iphone__island"></div>
           </div>
         </div>
@@ -51,118 +89,137 @@
   <!-- FEATURES -->
   <section class="features" id="features">
     <div class="container">
-      <h2 class="section-title">Tout ce dont votre club a besoin</h2>
+      <h2 class="section-title">Tout ce dont votre club de running, cyclisme ou trail a besoin</h2>
       <p class="section-subtitle">Des outils simples et puissants pour organiser, communiquer et faire grandir votre communauté.</p>
 
-      <div class="phones-row">
-        <div class="iphone iphone--sm">
-          <div class="iphone__screen">
-            <img src="assets/img/Simulator Screenshot 2.png" alt="Tribe — événements" />
-            <div class="iphone__island"></div>
+      <div class="features-layout">
+
+        <div class="features-left">
+          <div class="features__grid">
+
+            <div class="feature-card" data-screen="Simulator_Screenshot_3.png">
+              <div class="feature-card__icon">📅</div>
+              <h3 class="feature-card__title">Calendrier & Events</h3>
+              <p class="feature-card__desc">Sorties récurrentes, inscriptions et rappels automatiques pour toute la communauté.</p>
+            </div>
+
+            <div class="feature-card" data-screen="Simulator_Screenshot_4.png">
+              <div class="feature-card__icon">💬</div>
+              <h3 class="feature-card__title">Chat & Canaux</h3>
+              <p class="feature-card__desc">Canaux thématiques, messages directs et notifications push pour garder le lien.</p>
+            </div>
+
+            <div class="feature-card" data-screen="Simulator_Screenshot_5.png">
+              <div class="feature-card__icon">🔄</div>
+              <h3 class="feature-card__title">Marché seconde main</h3>
+              <p class="feature-card__desc">Vendez et achetez du matériel d'occasion entre membres en toute simplicité.</p>
+            </div>
+
+            <div class="feature-card" data-screen="Simulator_Screenshot_6.png">
+              <div class="feature-card__icon">🛍</div>
+              <h3 class="feature-card__title">Boutique</h3>
+              <p class="feature-card__desc">Commercialisez le merch de votre club et gérez les commandes directement dans l'app.</p>
+            </div>
+
+            <div class="feature-card" data-screen="Simulator_Screenshot_7.png">
+              <div class="feature-card__icon">🗺</div>
+              <h3 class="feature-card__title">Explorer</h3>
+              <p class="feature-card__desc">Découvrez des clubs près de chez vous et rejoignez une communauté sportive locale.</p>
+            </div>
+
+            <div class="feature-card" data-screen="Simulator_Screenshot_1.png">
+              <div class="feature-card__icon">💪</div>
+              <h3 class="feature-card__title">Entraînements</h3>
+              <p class="feature-card__desc">Bibliothèque de séances PPG, mobilité, vélo et course — personnalisable par votre club.</p>
+            </div>
+
           </div>
         </div>
-        <div class="iphone iphone--sm">
-          <div class="iphone__screen">
-            <img src="assets/img/Simulator Screenshot 3.png" alt="Tribe — messagerie" />
-            <div class="iphone__island"></div>
+
+        <div class="features-right">
+          <div class="features-phone">
+            <div class="iphone iphone--lg">
+              <div class="iphone__screen">
+                <img src="assets/img/Simulator_Screenshot_3.png" alt="Tribe app" />
+                <div class="iphone__island"></div>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="iphone iphone--sm">
-          <div class="iphone__screen">
-            <img src="assets/img/Simulator Screenshot 4.png" alt="Tribe — boutique" />
-            <div class="iphone__island"></div>
-          </div>
-        </div>
-      </div>
-
-      <div class="features__grid">
-
-        <div class="feature-card">
-          <div class="feature-card__icon">👥</div>
-          <h3 class="feature-card__title">Gestion des membres</h3>
-          <p class="feature-card__desc">Admission, rôles, profils sportifs et accès personnalisés pour chaque adhérent.</p>
-        </div>
-
-        <div class="feature-card">
-          <div class="feature-card__icon">📅</div>
-          <h3 class="feature-card__title">Événements</h3>
-          <p class="feature-card__desc">Créez des sorties récurrentes, gérez les inscriptions et envoyez des rappels automatiques.</p>
-        </div>
-
-        <div class="feature-card">
-          <div class="feature-card__icon">💬</div>
-          <h3 class="feature-card__title">Messagerie</h3>
-          <p class="feature-card__desc">Canaux thématiques, messages directs et notifications push pour garder le lien.</p>
-        </div>
-
-        <div class="feature-card">
-          <div class="feature-card__icon">🛒</div>
-          <h3 class="feature-card__title">Boutique & marché</h3>
-          <p class="feature-card__desc">Vendez du matériel, organisez une seconde main entre membres et gérez les commandes.</p>
-        </div>
-
-        <div class="feature-card">
-          <div class="feature-card__icon">💪</div>
-          <h3 class="feature-card__title">Entraînements</h3>
-          <p class="feature-card__desc">Bibliothèque de séances PPG, mobilité, vélo et course — personnalisable par votre club.</p>
-        </div>
-
-        <div class="feature-card">
-          <div class="feature-card__icon">📊</div>
-          <h3 class="feature-card__title">Analytics</h3>
-          <p class="feature-card__desc">Suivez l'activité de votre club, l'engagement des membres et la croissance de votre communauté.</p>
         </div>
 
       </div>
     </div>
   </section>
 
+  <!-- FEATURES CTA -->
+  <div class="features-cta">
+    <a href="https://apps.apple.com/app/id6784278561" target="_blank" rel="noopener" class="btn btn--primary btn--lg">
+      Essayer gratuitement
+    </a>
+  </div>
+
+  <!-- SOCIAL PROOF -->
+  <section class="social-proof">
+    <p class="social-proof__label">Ils utilisent déjà Tribe</p>
+    <div class="social-proof__logos">
+      <span class="club-placeholder">Club Running Paris</span>
+      <span class="club-placeholder">Cycling Lyon</span>
+      <span class="club-placeholder">Trail Marseille</span>
+      <span class="club-placeholder">Urban Riders</span>
+    </div>
+  </section>
+
   <!-- PRICING -->
   <section class="pricing" id="pricing">
     <div class="container">
-      <h2 class="section-title">Des tarifs clairs</h2>
+      <h2 class="section-title">Des tarifs adaptés à chaque club sportif</h2>
       <p class="section-subtitle">Commencez gratuitement, évoluez selon vos besoins.</p>
       <div class="pricing__grid">
 
         <div class="pricing-card">
-          <div class="pricing-card__plan">Starter</div>
-          <div class="pricing-card__price"><span class="pricing-card__amount">Gratuit</span></div>
+          <div class="pricing-card__plan">Gratuit</div>
+          <div class="pricing-card__price">
+            <span class="pricing-card__amount">0€</span>
+            <span class="pricing-card__period">/ mois</span>
+          </div>
           <ul class="pricing-card__features">
-            <li>Jusqu'à 30 membres</li>
-            <li>Événements illimités</li>
-            <li>Messagerie de groupe</li>
-            <li>Profils membres</li>
+            <li>Jusqu'à 15 membres</li>
+            <li>Calendrier & Events</li>
+            <li>Chat canaux + DMs</li>
+            <li>Marché seconde main & Partenaires</li>
           </ul>
-          <a href="#contact" class="btn btn--ghost btn--full">Commencer</a>
+          <a href="https://apps.apple.com" target="_blank" rel="noopener" class="btn btn--ghost btn--full">Télécharger gratuitement</a>
         </div>
 
         <div class="pricing-card pricing-card--featured">
           <div class="pricing-card__badge">Populaire</div>
-          <div class="pricing-card__plan">Club Pro</div>
+          <div class="pricing-card__plan">Starter</div>
           <div class="pricing-card__price">
-            <span class="pricing-card__amount">29€</span>
+            <span class="pricing-card__amount">3€</span>
             <span class="pricing-card__period">/ mois</span>
           </div>
           <ul class="pricing-card__features">
             <li>Membres illimités</li>
-            <li>Boutique & marché</li>
-            <li>Séances Tribe incluses</li>
+            <li>Tout le plan Gratuit</li>
             <li>Analytics avancés</li>
-            <li>Support prioritaire</li>
+            <li>Broadcast push</li>
           </ul>
-          <a href="#contact" class="btn btn--primary btn--full">Essayer 30 jours</a>
+          <a href="https://apps.apple.com" target="_blank" rel="noopener" class="btn btn--primary btn--full">Commencer</a>
         </div>
 
         <div class="pricing-card">
-          <div class="pricing-card__plan">Fédération</div>
-          <div class="pricing-card__price"><span class="pricing-card__amount">Sur mesure</span></div>
+          <div class="pricing-card__plan">Club Pro</div>
+          <div class="pricing-card__price">
+            <span class="pricing-card__amount">5€</span>
+            <span class="pricing-card__period">/ mois</span>
+          </div>
           <ul class="pricing-card__features">
-            <li>Multi-clubs</li>
-            <li>Marque blanche</li>
-            <li>Intégrations API</li>
-            <li>Accompagnement dédié</li>
+            <li>Tout le Starter</li>
+            <li>Boutique merch club</li>
+            <li>Bloc Renforcement (PPG)</li>
+            <li>Events payants</li>
           </ul>
-          <a href="#contact" class="btn btn--ghost btn--full">Nous contacter</a>
+          <a href="https://apps.apple.com" target="_blank" rel="noopener" class="btn btn--ghost btn--full">Passer Pro</a>
         </div>
 
       </div>
@@ -172,7 +229,7 @@
   <!-- CONTACT -->
   <section class="contact" id="contact">
     <div class="container">
-      <h2 class="section-title">Lancer votre club</h2>
+      <h2 class="section-title">Lancez votre club sur Tribe</h2>
       <p class="section-subtitle">Laissez-nous vos coordonnées, on vous configure votre espace en 24h.</p>
       <form class="contact__form" id="contactForm">
         <div class="form-row">
@@ -184,6 +241,10 @@
             <label for="club">Nom du club</label>
             <input type="text" id="club" name="club" placeholder="Paris Tri Club" required />
           </div>
+        </div>
+        <div class="form-group">
+          <label for="city">Ville</label>
+          <input type="text" id="city" name="city" placeholder="Paris" required />
         </div>
         <div class="form-group">
           <label for="email">Email</label>

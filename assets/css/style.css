@@ -322,6 +322,53 @@ ul { list-style: none; }
 }
 
 /* ===========================
+   FEATURES CTA
+   =========================== */
+.features-cta {
+  display: flex;
+  justify-content: center;
+  margin: 60px auto;
+}
+
+.features-cta .btn {
+  padding: 16px 48px;
+}
+
+/* ===========================
+   SOCIAL PROOF
+   =========================== */
+.social-proof {
+  background: #F5F5F5;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.social-proof__label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #999;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 24px;
+}
+
+.social-proof__logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.club-placeholder {
+  font-size: 15px;
+  font-weight: 600;
+  color: #666;
+}
+
+/* ===========================
    CONTACT
    =========================== */
 .contact {
@@ -418,6 +465,50 @@ ul { list-style: none; }
 .footer__links a:hover { color: var(--text-muted); }
 
 /* ===========================
+   FEATURES — 2-COL LAYOUT
+   =========================== */
+.features-layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 48px;
+  align-items: start;
+}
+
+/* On mobile the phone column is hidden — cards stay full-width */
+.features-right {
+  display: none;
+}
+
+@media (min-width: 960px) {
+  .features-layout {
+    grid-template-columns: 60% 1fr;
+  }
+
+  .features-right {
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: calc(var(--nav-h) + 40px);
+  }
+
+  /* Force 2-col grid inside the left panel (overrides the 3-col desktop default) */
+  .features-left .features__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Image fade transition driven by main.js */
+.features-phone img {
+  transition: opacity 0.2s ease;
+}
+
+/* Active card highlight */
+.feature-card.is-active {
+  border-color: var(--accent);
+  background: var(--bg-card-alt);
+}
+
+/* ===========================
    IPHONE MOCKUP
    =========================== */
 
@@ -436,38 +527,45 @@ ul { list-style: none; }
 
 /* Large — Hero */
 .iphone--lg {
-  width: 280px;
-  height: 580px;
-  padding: 14px 10px;
+  width: 238px;
+  height: 493px;
+  border-radius: 38px;
 }
 
 /* Small — Features row */
 .iphone--sm {
-  width: 180px;
-  height: 370px;
-  border-radius: 30px;
-  padding: 9px 7px;
+  width: 153px;
+  height: 315px;
+  border-radius: 26px;
 }
 
-/* Screen */
+/* Screen — absolute inset inside the shell */
 .iphone__screen {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  border-radius: 34px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  border-radius: 30px;
   overflow: hidden;
   background: #000;
 }
 
 .iphone--sm .iphone__screen {
-  border-radius: 22px;
+  top: 8px;
+  left: 8px;
+  right: 8px;
+  bottom: 8px;
+  border-radius: 20px;
 }
 
 .iphone__screen img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: top center;
   display: block;
+  transform: scale(1.01);
 }
 
 /* Dynamic Island */
