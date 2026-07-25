@@ -676,6 +676,36 @@ ul { list-style: none; }
 /* ===========================
    NAV — hide links on mobile
    =========================== */
+/* ===========================
+   GEO PAGES — content section
+   =========================== */
+.geo-content {
+  padding: 80px 20px;
+}
+
+.geo-content__body {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.geo-content__body h2 {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--text);
+  margin: 48px 0 12px;
+}
+
+.geo-content__body h2:first-child {
+  margin-top: 0;
+}
+
+.geo-content__body p {
+  font-size: 16px;
+  line-height: 1.75;
+  color: var(--text-muted);
+  margin: 0 0 16px;
+}
+
 @media (max-width: 639px) {
   .nav__links { display: none; }
   .nav__cta   { display: none; }
