@@ -11,7 +11,7 @@
   --accent:     #FFD700;
   --accent-dim: rgba(255, 215, 0, 0.18);
 
-  --font: 'Inter', sans-serif;
+  --font: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
   --radius-sm: 8px;
   --radius:    16px;
   --radius-lg: 24px;
@@ -134,13 +134,12 @@ ul { list-style: none; }
   border-bottom: 1px solid var(--border);
 }
 
-.nav__logo img { height: 40px; width: auto; display: block; }
-
 .nav__logo {
-  font-size: 20px;
-  font-weight: 800;
-  color: var(--accent);
-  letter-spacing: -0.03em;
+  font-size: 1.5rem;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+  color: #0A0A0A;
+  text-decoration: none;
 }
 
 .nav__links {
@@ -194,8 +193,11 @@ ul { list-style: none; }
 
 .hero__actions {
   display: flex;
+  flex-direction: row;
+  gap: 16px;
   flex-wrap: wrap;
-  gap: 12px;
+  justify-content: center;
+  align-items: center;
   margin-top: 8px;
 }
 
@@ -567,7 +569,6 @@ ul { list-style: none; }
   object-fit: cover;
   object-position: top center;
   display: block;
-  transform: scale(1.01);
 }
 
 /* Dynamic Island */
