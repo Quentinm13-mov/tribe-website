@@ -162,6 +162,16 @@ ul { list-style: none; }
   font-weight: 500;
   color: var(--text-muted);
 }
+.nav__dropdown > span {
+  color: var(--text-muted);
+  font-size: inherit;
+  font-weight: 500;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+.nav__dropdown:hover > span { color: var(--text); }
 .nav__dropdown:hover { color: var(--text); }
 .nav__dropdown-menu {
   display: none;
