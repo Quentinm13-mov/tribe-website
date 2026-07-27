@@ -595,7 +595,11 @@ ul { list-style: none; }
     display: flex;
     align-items: center;
     justify-content: center;
+    position: sticky;
+    top: 50%;
+    transform: translateY(-50%);
     height: 100%;
+    align-self: start;
   }
 
   .features-left .features__grid {
@@ -628,7 +632,7 @@ ul { list-style: none; }
 .hero-mockup {
   height: 100%;
   width: auto;
-  max-height: 500px;
+  max-height: 550px;
   object-fit: contain;
   display: block;
   filter: drop-shadow(0 20px 40px rgba(0,0,0,0.15));
@@ -639,8 +643,6 @@ ul { list-style: none; }
   height: 75%;
   max-height: 600px;
   object-fit: contain;
-  position: sticky;
-  top: 12%;
   filter: drop-shadow(0 20px 40px rgba(0,0,0,0.15));
   transition: opacity 0.2s ease;
 }
