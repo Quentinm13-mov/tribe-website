@@ -489,7 +489,7 @@ ul { list-style: none; }
   display: grid;
   grid-template-columns: 1fr;
   gap: 48px;
-  align-items: start;
+  align-items: stretch;
 }
 
 /* On mobile the phone column is hidden — cards stay full-width */
@@ -593,7 +593,9 @@ ul { list-style: none; }
 
   .features-right {
     display: flex;
+    align-items: center;
     justify-content: center;
+    height: 100%;
   }
 
   .features-left .features__grid {
@@ -620,22 +622,25 @@ ul { list-style: none; }
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 100%;
 }
 
 .hero-mockup {
-  width: 240px;
-  height: auto;
+  height: 100%;
+  width: auto;
+  max-height: 500px;
+  object-fit: contain;
   display: block;
-  margin: 0 auto;
   filter: drop-shadow(0 20px 40px rgba(0,0,0,0.15));
 }
 
 .features-mockup {
-  width: 280px;
-  height: auto;
-  display: block;
+  width: auto;
+  height: 75%;
+  max-height: 600px;
+  object-fit: contain;
   position: sticky;
-  top: 100px;
+  top: 12%;
   filter: drop-shadow(0 20px 40px rgba(0,0,0,0.15));
   transition: opacity 0.2s ease;
 }
