@@ -153,9 +153,15 @@ ul { list-style: none; }
   transition: color 0.15s;
 }
 .nav__links a:hover { color: var(--text); }
-.nav__links li { list-style: none; }
+.nav__links li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
 
 .nav__dropdown {
+  display: flex;
+  align-items: center;
   position: relative;
   cursor: pointer;
   font-size: 14px;
