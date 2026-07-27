@@ -489,7 +489,7 @@ ul { list-style: none; }
   display: grid;
   grid-template-columns: 1fr;
   gap: 48px;
-  align-items: stretch;
+  align-items: start;
 }
 
 /* On mobile the phone column is hidden — cards stay full-width */
@@ -588,18 +588,15 @@ ul { list-style: none; }
 
 @media (min-width: 960px) {
   .features-layout {
-    grid-template-columns: 1fr 280px;
+    grid-template-columns: 1fr 300px;
   }
 
   .features-right {
+    position: sticky;
+    top: 30vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    position: sticky;
-    top: 20%;
-    transform: none;
-    align-self: start;
-    padding-top: 50%;
   }
 
   .features-left .features__grid {
@@ -640,8 +637,8 @@ ul { list-style: none; }
 
 .features-mockup {
   width: auto;
-  height: 85%;
-  max-height: 680px;
+  height: auto;
+  max-height: 500px;
   object-fit: contain;
   filter: drop-shadow(0 20px 40px rgba(0,0,0,0.15));
   transition: opacity 0.2s ease;
