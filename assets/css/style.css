@@ -507,7 +507,7 @@ ul { list-style: none; }
     gap: 12px;
   }
   .hero-mockup {
-    width: 220px;
+    width: 180px;
     margin: 32px auto 0;
   }
   .features-phone-mobile {
@@ -623,7 +623,7 @@ ul { list-style: none; }
 }
 
 .hero-mockup {
-  width: 280px;
+  width: 240px;
   height: auto;
   display: block;
   margin: 0 auto;
