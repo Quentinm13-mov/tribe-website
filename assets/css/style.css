@@ -153,6 +153,44 @@ ul { list-style: none; }
   transition: color 0.15s;
 }
 .nav__links a:hover { color: var(--text); }
+.nav__links li { list-style: none; }
+
+.nav__dropdown {
+  position: relative;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-muted);
+}
+.nav__dropdown:hover { color: var(--text); }
+.nav__dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #fff;
+  border: 1px solid #E8E8E8;
+  border-radius: 8px;
+  padding: 8px;
+  min-width: 160px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  z-index: 100;
+}
+.nav__dropdown:hover .nav__dropdown-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.nav__dropdown-menu a {
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+.nav__dropdown-menu a:hover {
+  background: #F5F5F5;
+  color: var(--text);
+}
 
 /* ===========================
    HERO
@@ -469,6 +507,26 @@ ul { list-style: none; }
 }
 .footer__nav a { font-size: 14px; color: var(--text-muted); transition: color 0.15s; }
 .footer__nav a:hover { color: var(--text); }
+
+.footer__col {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.footer__col h4 {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 4px;
+}
+.footer__col a {
+  font-size: 14px;
+  color: var(--text-muted);
+  transition: color 0.15s;
+}
+.footer__col a:hover { color: var(--text); }
 
 .footer__bottom {
   display: flex;
