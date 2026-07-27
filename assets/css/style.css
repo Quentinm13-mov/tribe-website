@@ -596,10 +596,10 @@ ul { list-style: none; }
     align-items: center;
     justify-content: center;
     position: sticky;
-    top: 50%;
-    transform: translateY(-50%);
-    height: 100%;
+    top: 20%;
+    transform: none;
     align-self: start;
+    padding-top: 50%;
   }
 
   .features-left .features__grid {
