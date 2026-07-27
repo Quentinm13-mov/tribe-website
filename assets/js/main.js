@@ -32,6 +32,21 @@
 })();
 
 // ===========================
+// NAV — hamburger menu
+// ===========================
+(function () {
+  const burger = document.getElementById('burger');
+  const navLinks = document.querySelector('.nav__links');
+  if (!burger || !navLinks) return;
+  burger.addEventListener('click', () => {
+    navLinks.classList.toggle('is-open');
+  });
+  document.querySelectorAll('.nav__links a').forEach(link => {
+    link.addEventListener('click', () => navLinks.classList.remove('is-open'));
+  });
+})();
+
+// ===========================
 // FEATURES — hover phone swap
 // ===========================
 (function () {
