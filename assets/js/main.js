@@ -35,7 +35,7 @@
 // FEATURES — hover phone swap
 // ===========================
 (function () {
-  const img = document.querySelector('.features-phone img');
+  const img = document.getElementById('features-phone');
   if (!img) return;
 
   const cards = document.querySelectorAll('.feature-card[data-screen]');
@@ -46,12 +46,11 @@
     const screen = card.dataset.screen;
     img.style.opacity = '0';
     setTimeout(() => {
-      img.src = `assets/img/${screen}`;
+      img.src = `assets/img/mockups/${screen}`;
       img.style.opacity = '1';
     }, 200);
   }
 
-  // Initialise on the first card
   if (cards.length > 0) cards[0].classList.add('is-active');
 
   cards.forEach(card => {
