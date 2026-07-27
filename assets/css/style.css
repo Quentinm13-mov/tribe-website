@@ -815,19 +815,21 @@ ul { list-style: none; }
   .nav__burger { display: flex; }
   .nav__cta { display: none; }
   .nav__links {
-    display: none;
+    display: flex !important;
+    flex-direction: column;
     position: fixed;
     top: 60px;
     left: 0;
     right: 0;
     background: #fff;
     padding: 24px;
-    flex-direction: column;
     gap: 16px;
     border-bottom: 1px solid var(--border);
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     z-index: 99;
+    transform: translateY(-110%);
+    transition: transform 0.3s ease;
   }
-  .nav__links.is-open { display: flex; }
+  .nav__links.is-open { transform: translateY(0); }
   .nav__links li { display: flex; align-items: center; }
 }
