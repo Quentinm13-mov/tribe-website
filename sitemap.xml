@@ -2,22 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://tribeapp.fr/</loc>
-    <lastmod>2026-07-25</lastmod>
+    <lastmod>2026-07-28</lastmod>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://tribeapp.fr/running</loc>
-    <lastmod>2026-07-25</lastmod>
+    <loc>https://tribeapp.fr/running.html</loc>
+    <lastmod>2026-07-28</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://tribeapp.fr/cycling</loc>
-    <lastmod>2026-07-25</lastmod>
+    <loc>https://tribeapp.fr/cycling.html</loc>
+    <lastmod>2026-07-28</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://tribeapp.fr/trail</loc>
-    <lastmod>2026-07-25</lastmod>
+    <loc>https://tribeapp.fr/trail.html</loc>
+    <lastmod>2026-07-28</lastmod>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://tribeapp.fr/blog.html</loc>
+    <lastmod>2026-07-28</lastmod>
+    <priority>0.7</priority>
   </url>
 </urlset>
