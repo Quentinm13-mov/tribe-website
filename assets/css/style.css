@@ -282,6 +282,18 @@ ul { list-style: none; }
 }
 
 /* ===========================
+   WHY TRIBE
+   =========================== */
+.why-tribe { padding: 80px 24px; background: #F8F8F8; }
+.why-tribe h2 { text-align: center; font-size: 2rem; font-weight: 800; margin-bottom: 48px; }
+.why-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; max-width: 900px; margin: 0 auto; }
+.why-card { background: #fff; border-radius: 16px; padding: 32px 24px; text-align: center; border: 1px solid #E8E8E8; }
+.why-icon { font-size: 2.5rem; display: block; margin-bottom: 16px; }
+.why-card h3 { font-size: 1.1rem; font-weight: 700; margin-bottom: 12px; }
+.why-card p { color: #666; font-size: 0.95rem; line-height: 1.6; }
+@media (max-width: 959px) { .why-grid { grid-template-columns: 1fr; gap: 16px; } }
+
+/* ===========================
    FEATURES
    =========================== */
 .features {
