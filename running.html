@@ -78,10 +78,10 @@
 
   <!-- HERO -->
   <section class="hero" id="hero">
-    <div class="container geo-hero">
+    <div class="container">
       <div class="hero__content">
         <span class="badge">Running</span>
-        <h1 class="hero__title">L'app de gestion pour vos <span style="color: #FFD700;">clubs de running</span></h1>
+        <h1 class="hero__title">L'app de gestion pour les<br /><span class="accent">clubs de running.</span></h1>
         <p class="hero__subtitle">
           Planifiez vos sorties, gérez vos groupes de niveau et fédérez vos coureurs dans une seule app.
         </p>
@@ -284,29 +284,21 @@
   <!-- CONTACT -->
   <section class="contact" id="contact">
     <div class="container">
-      <h2 class="section-title">Lancez votre club de running sur Tribe</h2>
+      <h2 class="section-title">Lancez votre club sur Tribe</h2>
       <p class="section-subtitle">Laissez-nous vos coordonnées, on vous configure votre espace en 24h.</p>
-      <form class="contact__form" id="contactForm">
-        <div class="form-row">
-          <div class="form-group">
-            <label for="name">Nom du responsable</label>
-            <input type="text" id="name" name="name" placeholder="Jean Dupont" required />
-          </div>
-          <div class="form-group">
-            <label for="club">Nom du club</label>
-            <input type="text" id="club" name="club" placeholder="Paris Running Club" required />
-          </div>
-        </div>
-        <div class="form-group">
-          <label for="city">Ville</label>
-          <input type="text" id="city" name="city" placeholder="Paris" required />
-        </div>
-        <div class="form-group">
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" placeholder="contact@monclub.fr" required />
-        </div>
-        <button type="submit" class="btn btn--primary btn--lg btn--full">Envoyer</button>
-      </form>
+      <div style="max-width: 600px; margin: 0 auto;">
+        <iframe
+          data-tally-src="https://tally.so/embed/KYKKy7?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1&formEventsForwarding=1"
+          loading="lazy"
+          width="100%"
+          height="380"
+          frameborder="0"
+          marginheight="0"
+          marginwidth="0"
+          title="Contact Tribe">
+        </iframe>
+      </div>
+      <script>var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};if("undefined"!=typeof Tally)v();else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}</script>
     </div>
   </section>
 

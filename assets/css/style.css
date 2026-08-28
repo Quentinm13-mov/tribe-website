@@ -281,9 +281,6 @@ ul { list-style: none; }
   justify-content: center;
 }
 
-/* Full-width hero variant used on sport landing pages (running.html, etc.) */
-.geo-hero { max-width: 100%; padding: 80px 40px; text-align: center; }
-
 /* ===========================
    WHY TRIBE
    =========================== */
