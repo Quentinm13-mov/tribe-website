@@ -72,3 +72,14 @@
     card.addEventListener('mouseenter', () => activateCard(card));
   });
 })();
+
+// ===========================
+// FAQ — accordion toggle
+// ===========================
+(function () {
+  document.querySelectorAll('.faq-question').forEach(btn => {
+    btn.addEventListener('click', () => {
+      btn.closest('.faq-item').classList.toggle('is-open');
+    });
+  });
+})();
