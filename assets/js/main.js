@@ -74,16 +74,24 @@
 })();
 
 // ===========================
-// CONTACT FORM — basic submit
+// CONTACT FORM — mailto submit
 // ===========================
 (function () {
   const form = document.getElementById('contactForm');
   if (!form) return;
+
   form.addEventListener('submit', (e) => {
     e.preventDefault();
-    const btn = form.querySelector('button[type="submit"]');
-    btn.textContent = 'Envoyé ✓';
-    btn.disabled = true;
-    btn.style.opacity = '0.7';
+
+    const name = document.getElementById('name')?.value || '';
+    const club = document.getElementById('club')?.value || '';
+    const city = document.getElementById('city')?.value || '';
+    const email = document.getElementById('email')?.value || '';
+    const sport = document.getElementById('sport')?.value || '';
+
+    const subject = encodeURIComponent(`Tribe — ${club} (${city})`);
+    const body = encodeURIComponent(`Nom : ${name}\nClub : ${club}\nVille : ${city}\nEmail : ${email}\nSport principal : ${sport}`);
+
+    window.location.href = `mailto:contact@tribeapp.fr?subject=${subject}&body=${body}`;
   });
 })();
